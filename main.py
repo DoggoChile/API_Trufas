@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def FLANN():
-    root = os.getcwd()
-    img1path = os.path.join(root, 'Luz1.jpg')
-    img2path = os.path.join(root, 'Luz2.jpg')
+    root = os.path.abspath('..')
+    img1path = os.path.join(root, 'API_Trufas Images', 'Luz1.jpg')
+    img2path = os.path.join(root, 'API_Trufas Images', 'Luz2.jpg')
     img1 = cv.imread(img1path, cv.IMREAD_GRAYSCALE)
     img2 = cv.imread(img2path, cv.IMREAD_GRAYSCALE)
 
